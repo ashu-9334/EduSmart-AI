@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduSmart AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">EduSmart <span>AI</span></div>
+    <p>Student Performance Analyzer</p>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>AI Student Performance Analyzer</h1>
+        <p>Analyze your academic performance using AI, Python and Oracle.</p>
+    </section>
+
+    <section class="card">
+
+        <h2>Student Performance</h2>
+
+        <div class="form-grid">
+
+            <div>
+                <label>Student Name</label>
+                <input type="text" id="studentName" placeholder="Enter name">
+            </div>
+
+            <div>
+                <label>Roll Number</label>
+                <input type="text" id="rollNo" placeholder="Example: ES001">
+            </div>
+
+            <div>
+                <label>Attendance (%)</label>
+                <input type="number" id="attendance" min="0" max="100" placeholder="82">
+            </div>
+
+            <div>
+                <label>Python Marks</label>
+                <input type="number" id="pythonMarks" min="0" max="100" placeholder="75">
+            </div>
+
+            <div>
+                <label>Web Programming Marks</label>
+                <input type="number" id="webMarks" min="0" max="100" placeholder="68">
+            </div>
+
+            <div>
+                <label>PL/SQL Marks</label>
+                <input type="number" id="plsqlMarks" min="0" max="100" placeholder="80">
+            </div>
+
+        </div>
+
+        <button id="analyzeBtn">Analyze Performance</button>
+
+    </section>
+
+    <section class="result-card" id="resultCard">
+
+        <h2>AI Performance Result</h2>
+
+        <div class="result-grid">
+
+            <div class="result-box">
+                <h3>Average</h3>
+                <p id="averageResult">--</p>
+            </div>
+
+            <div class="result-box">
+                <h3>Grade</h3>
+                <p id="gradeResult">--</p>
+            </div>
+
+            <div class="result-box">
+                <h3>AI Prediction</h3>
+                <p id="aiResult">--</p>
+            </div>
+
+        </div>
+
+        <div class="recommendation">
+            <h3>AI Recommendation</h3>
+            <p id="recommendationText">
+                Submit your performance details to receive an AI recommendation.
+            </p>
+        </div>
+
+    </section>
+
+    <section class="stats-grid">
+
+        <div class="stat-card">
+            <h3>Total Students</h3>
+            <p id="totalStudents">0</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Average Performance</h3>
+            <p id="overallAverage">0.00</p>
+        </div>
+
+        <div class="stat-card">
+            <h3>Top Grade</h3>
+            <p id="topGrade">--</p>
+        </div>
+
+    </section>
+
+    <section class="card">
+
+        <h2>Student Records</h2>
+
+        <div class="table-container">
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Roll No</th>
+                        <th>Attendance</th>
+                        <th>Average</th>
+                        <th>Grade</th>
+                        <th>AI Prediction</th>
+                    </tr>
+                </thead>
+
+                <tbody id="studentTableBody">
+                    <tr>
+                        <td colspan="6">Loading student records...</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>EduSmart AI | HTML • CSS • JavaScript • Python • Oracle • PL/SQL • AI</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
