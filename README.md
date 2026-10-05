@@ -8,6 +8,10 @@ The system allows users to enter student academic information, calculate perform
 
 ---
 
+## 📸 Project Dashboard
+
+![EduSmart AI Dashboard](screenshots/edusmart-dashboard.png)
+
 ## 🎯 Objectives
 
 * Manage student academic records.
