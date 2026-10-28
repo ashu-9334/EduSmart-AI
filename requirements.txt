@@ -1,0 +1,4 @@
+Flask
+oracledb
+scikit-learn
+gunicorn
