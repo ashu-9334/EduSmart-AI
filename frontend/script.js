@@ -72,7 +72,7 @@ analyzeBtn.addEventListener("click", async function () {
         grade;
 
     const saveResponse = await fetch(
-    "http://127.0.0.1:5000/add-student",
+    "https://edusmart-ai-xrpi.onrender.com/add-student",
     {
         method: "POST",
         headers: {
